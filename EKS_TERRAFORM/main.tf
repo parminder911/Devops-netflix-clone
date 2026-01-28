@@ -78,7 +78,7 @@ resource "aws_iam_role_policy_attachment" "example-AmazonEC2ContainerRegistryRea
   role       = aws_iam_role.example1.name
 }
 
-#create node group
+# create node group
 resource "aws_eks_node_group" "example" {
   cluster_name    = aws_eks_cluster.example.name
   node_group_name = "Node-cloud"
@@ -86,14 +86,18 @@ resource "aws_eks_node_group" "example" {
   subnet_ids      = data.aws_subnets.public.ids
 
   scaling_config {
-    desired_size = 1
-    max_size     = 2
-    min_size     = 1
+    desired_size = 2
+    max_size     = 4
+    min_size     = 2
   }
-  instance_types = ["t3.micro"]
+
+  # UPDATED: Changed from t3.micro to m7i-flex.large
+  instance_types = ["m7i-flex.large"]
+
+  # NEW: Added 25GB storage for each node
+  disk_size = 25
 
   # Ensure that IAM Role permissions are created before and deleted after EKS Node Group handling.
-  # Otherwise, EKS will not be able to properly delete EC2 Instances and Elastic Network Interfaces.
   depends_on = [
     aws_iam_role_policy_attachment.example-AmazonEKSWorkerNodePolicy,
     aws_iam_role_policy_attachment.example-AmazonEKS_CNI_Policy,

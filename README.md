@@ -1,95 +1,163 @@
-<div align="center">
-  <a href="http://netflix-clone-with-tmdb-using-react-mui.vercel.app/">
-    <img src="./public/assets/netflix-logo.png" alt="Logo" width="100" height="32">
-  </a>
+<!-- ✅ README.md (Copy-Paste Friendly for GitHub) -->
+<!-- Netflix Clone DevSecOps CI/CD Project by Parminderjit Singh -->
 
-  <h3 align="center">Netflix Clone</h3>
+<h1 align="center">🎬 Netflix Clone DevSecOps CI/CD Pipeline 🚀</h1>
 
-  <p align="center">
-    <a href="https://netflix-clone-react-typescript.vercel.app/">View Demo</a>
-    ·
-    <a href="https://github.com/crazy-man22/netflix-clone-react-typescript/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/crazy-man22/netflix-clone-react-typescript/issues">Request Feature</a>
-  </p>
-</div>
+<p align="center">
+  <b>End-to-End DevSecOps Pipeline using Jenkins + SonarQube + Trivy + Docker + Kubernetes + Prometheus + Grafana</b>
+</p>
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#prerequests">Prerequests</a>
-    </li>
-    <li>
-      <a href="#which-features-this-project-deals-with">Which features this project deals with</a>
-    </li>
-    <li><a href="#third-party-libraries-used-except-for-react-and-rtk">Third Party libraries used except for React and RTK</a></li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ol>
-</details>
+<p align="center">
+  <img alt="DevSecOps" src="https://img.shields.io/badge/DevSecOps-CI%2FCD-blue" />
+  <img alt="AWS" src="https://img.shields.io/badge/AWS-Cloud-orange" />
+  <img alt="Jenkins" src="https://img.shields.io/badge/Jenkins-Automation-red" />
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-Container-blue" />
+  <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-Orchestration-blueviolet" />
+  <img alt="Monitoring" src="https://img.shields.io/badge/Monitoring-Prometheus%20%26%20Grafana-success" />
+</p>
 
-<br />
+<hr />
 
-<div align="center">
-  <img src="./public/assets/home-page.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Home Page</p>
-  <img src="./public/assets/mini-portal.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Mini Portal</p>
-  <img src="./public/assets/detail-modal.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Detail Modal</p>
-  <img src="./public/assets/grid-genre.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Grid Genre Page</p>
-  <img src="./public/assets/watch.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Watch Page with customer contol bar</p>
-</div>
+<h2>📌 Project Overview</h2>
 
-## Prerequests
+<p>
+This project demonstrates a complete <b>DevSecOps CI/CD pipeline</b> for a <b>Netflix Clone</b> application.
+It automates the full process from code checkout → build → testing → security scanning → docker build & push →
+deployment → monitoring.
+</p>
 
-- Create an account if you don't have on [TMDB](https://www.themoviedb.org/).
-  Because I use its free API to consume movie/tv data.
-- And then follow the [documentation](https://developers.themoviedb.org/3/getting-started/introduction) to create API Key
-- Finally, if you use v3 of TMDB API, create a file named `.env`, and copy and paste the content of `.env.example`.
-  And then paste the API Key you just created.
+<p>
+The goal of this project is to show how modern companies deploy applications securely with
+<b>CI/CD automation</b>, <b>security scanning</b> and <b>real-time monitoring</b>.
+</p>
 
-## Which features this project deal with
+<hr />
 
-- How to create and use [Custom Hooks](https://reactjs.org/docs/hooks-custom.html)
-- How to use [Context](https://reactjs.org/docs/context.html) and its provider
-- How to use lazy and Suspense for [Code-Splitting](https://reactjs.org/docs/code-splitting.html)
-- How to use a new [lazy](https://reactrouter.com/en/main/route/lazy) feature of react-router to reduce bundle size.
-- How to use data [loader](https://reactrouter.com/en/main/route/loader) of react-router, and how to use redux dispatch in the loader to fetch data before rendering component.
-- How to use [Portal](https://reactjs.org/docs/portals.html)
-- How to use [Fowarding Refs](https://reactjs.org/docs/forwarding-refs.html) to make components reusuable
-- How to create and use [HOC](https://reactjs.org/docs/higher-order-components.html)
-- How to customize default theme of [MUI](https://mui.com/)
-- How to use [RTK](https://redux-toolkit.js.org/introduction/getting-started)
-- How to use [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
-- How to customize default classname of [MUI](https://mui.com/material-ui/experimental-api/classname-generator)
-- Infinite Scrolling(using [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API))
-- How to make awesome carousel using [slick-carousel](https://react-slick.neostack.com)
+<h2>🎯 Key Highlights</h2>
 
-## Third Party libraries used except for React and RTK
+<ul>
+  <li>✅ Automated CI/CD pipeline using <b>Jenkins</b></li>
+  <li>✅ Code Quality analysis using <b>SonarQube</b> + Quality Gate</li>
+  <li>✅ Security scanning using <b>Trivy</b> (Filesystem + Docker Image vulnerabilities)</li>
+  <li>✅ Containerization using <b>Docker</b></li>
+  <li>✅ Docker image pushed to <b>DockerHub</b></li>
+  <li>✅ Deployment on <b>Docker container</b> and <b>Kubernetes cluster</b></li>
+  <li>✅ Monitoring setup with <b>Prometheus</b> and <b>Grafana</b></li>
+</ul>
 
-- [react-router-dom@v6.9](https://reactrouter.com/en/main)
-- [MUI(Material UI)](https://mui.com/)
-- [framer-motion](https://www.framer.com/docs/)
-- [video.js](https://videojs.com)
-- [react-slick](https://react-slick.neostack.com/)
+<hr />
 
-## Install with Docker
+<h2>🛠️ Tools & Technologies Used</h2>
 
-```sh
-docker build --build-arg TMDB_V3_API_KEY=your_api_key_here -t netflix-clone .
+<ul>
+  <li><b>AWS EC2</b> – Hosting Jenkins, Docker, SonarQube, Prometheus, Grafana</li>
+  <li><b>Jenkins</b> – CI/CD automation pipeline</li>
+  <li><b>SonarQube</b> – Static code analysis & Quality Gate</li>
+  <li><b>Trivy</b> – Security scanning (FS + Image scan)</li>
+  <li><b>Docker</b> – Build & run application container</li>
+  <li><b>DockerHub</b> – Container image registry</li>
+  <li><b>Kubernetes</b> – Deploy application using deployment & service manifests</li>
+  <li><b>Prometheus</b> – Metrics monitoring (Jenkins metrics integration)</li>
+  <li><b>Grafana</b> – Dashboard visualization & analytics</li>
+</ul>
 
-docker run --name netflix-clone-website --rm -d -p 80:80 netflix-clone
-```
+<hr />
 
-## Todo
+<h2>🏗️ CI/CD Pipeline Workflow</h2>
 
-- Make the animation of video card portal more similar to Netflix.
-- Improve performance. I am using `context` and `provider` but all components subscribed to the context's value are re-rendered. These re-renders happen even if the part of the value is not used in render of the component. there are [several ways](https://blog.axlight.com/posts/4-options-to-prevent-extra-rerenders-with-react-context/) to prevent the re-renders from these behaviours. In addition to them, there may be several performance issues.
-- Replace bundler([Vite](https://vitejs.dev/guide)) with [Turbopack](https://turbo.build/pack/docs/why-turbopack). Turbopack is introduced in Next.js conf recently. It's very fast but it's nor ready to use right now. it just support Next.js, and they plan to support all others as soon as possible. so if it's ready to use, replace [Vite](https://vitejs.dev/guide) with [Turbopack](https://turbo.build/pack/docs/why-turbopack).
-- Add accessibilities for better UX.
-- Add Tests.
+<ol>
+  <li><b>Checkout Source Code</b> from GitHub</li>
+  <li><b>Install Dependencies</b> (Node.js + npm)</li>
+  <li><b>SonarQube Analysis</b> (Code quality + security)</li>
+  <li><b>Quality Gate Check</b></li>
+  <li><b>Trivy FS Scan</b> (source code security scan)</li>
+  <li><b>Docker Build</b> with TMDB API key</li>
+  <li><b>Docker Push</b> to DockerHub</li>
+  <li><b>Trivy Image Scan</b> (container vulnerability scan)</li>
+  <li><b>Deploy App</b> (Docker container + Kubernetes deployment)</li>
+  <li><b>Monitoring</b> using Prometheus + Grafana</li>
+</ol>
+
+<hr />
+
+<h2>📊 Monitoring Setup (Prometheus + Grafana)</h2>
+
+<ul>
+  <li>Prometheus scrapes Jenkins metrics endpoint: <b>/prometheus</b></li>
+  <li>Grafana shows Jenkins performance dashboards</li>
+</ul>
+
+<p>
+<b>Grafana URL:</b> <code>http://&lt;prometheus-server-ip&gt;:3000</code><br />
+<b>Prometheus URL:</b> <code>http://&lt;prometheus-server-ip&gt;:9090</code>
+</p>
+
+<hr />
+
+<h2>🔐 Security & Quality (DevSecOps)</h2>
+
+<ul>
+  <li><b>SonarQube</b> ensures code quality, detects vulnerabilities and code smells</li>
+  <li><b>Trivy FS Scan</b> scans dependencies and project files</li>
+  <li><b>Trivy Image Scan</b> scans container for vulnerabilities</li>
+</ul>
+
+<hr />
+
+<h2>📌 Jenkins Credentials Used</h2>
+
+<ul>
+  <li><b>sonar-token</b> – SonarQube authentication</li>
+  <li><b>docker</b> – DockerHub credentials (<b>parminderj98</b>)</li>
+  <li><b>k8s</b> – Kubernetes kubeconfig credential</li>
+</ul>
+
+<hr />
+
+<h2>🧪 API Key Used</h2>
+
+<p>
+This app uses TMDB API to fetch movies data.
+</p>
+
+<ul>
+  <li><b>TMDB API Key:</b> <code>541c45c0b777545gd12e2be08acf53c</code></li>
+</ul>
+
+<hr />
+
+<h2>💡 What I Learned</h2>
+
+<ul>
+  <li>How real-world CI/CD pipelines are built using Jenkins</li>
+  <li>Implementing DevSecOps practices in pipeline</li>
+  <li>Handling pipeline failures and debugging issues (Docker version mismatch, networking, kubectl DNS errors)</li>
+  <li>Monitoring Jenkins performance using Prometheus and Grafana dashboards</li>
+  <li>Docker deployment & Kubernetes deployment automation</li>
+</ul>
+
+<hr />
+
+<h2>👨‍💻 Author</h2>
+
+<p>
+<b>Parminderjit Singh</b><br />
+📍 Ludhiana, India<br />
+🔗 LinkedIn:
+<a href="https://www.linkedin.com/in/parminderjit/" target="_blank">
+  https://www.linkedin.com/in/parminderjit/
+</a>
+</p>
+
+<hr />
+
+<h2>⭐ Support</h2>
+
+<p>
+If you found this project helpful, please consider giving it a ⭐ on GitHub!
+</p>
+
+
+
+
+
